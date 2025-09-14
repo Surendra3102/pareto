@@ -1,5 +1,11 @@
 import { useState } from "react";
 import "../styles/Footer.css";
+import logo from '../assets/logo.svg';
+import fb from '../assets/fb.png';
+import insta from '../assets/insta.png';
+import link from '../assets/link.png';
+import youtube from '../assets/youtube.png';
+import x from '../assets/x.png';
 
 const Footer = () => {
   const [showMore, setShowMore] = useState(false);
@@ -15,7 +21,7 @@ const Footer = () => {
         {/* Logo + Newsletter */}
         <div className="footer-left">
           <div className="logo">
-            <img src="logo.svg" alt="Company Logo" />
+            <img src={logo} alt="Company Logo" />
           </div>
 
           <div className="newsletter">
@@ -53,11 +59,11 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="footer-bottom">
         <div className="social-icons">
-          <a href="#"><img src="/x.png" alt="Twitter" /></a>
-          <a href="#"><img src="/insta.png" alt="Instagram" /></a>
-          <a href="#"><img src="/fb.png" alt="Facebook" /></a>
-          <a href="#"><img src="/link.png" alt="LinkedIn" /></a>
-          <a href="#"><img src="/youtube.png" alt="YouTube" /></a>
+          <a href="#"><img src={x} alt="X" /></a>
+          <a href="#"><img src={insta} alt="Instagram" /></a>
+          <a href="#"><img src={fb} alt="Facebook" /></a>
+          <a href="#"><img src={link} alt="LinkedIn" /></a>
+          <a href="#"><img src={youtube} alt="YouTube" /></a>
         </div>
 
         <div className="footer-links-inline">

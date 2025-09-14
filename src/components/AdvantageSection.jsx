@@ -1,5 +1,11 @@
 import { useState } from "react";
 import "../styles/Advantage.css";
+import ad2 from "../assets/ad2.png";
+import ad1 from "../assets/ad1.png";
+import ad4 from "../assets/ad4.png";
+import ad3 from "../assets/ad3.png";
+
+
 
 const AdvantageSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -13,25 +19,25 @@ const AdvantageSection = () => {
       title: "Lower cost of capital",
       content:
         "A decentralized infrastructure that compresses the costs of traditional off-chain securitization and uses open-source services to reduce the intermediary costs and complexity of TradFi.",
-      icon: "/ad2.png",
+      icon: ad2,
     },
     {
       title: "End-to-end transparency",
       content:
         "Blockchain-based systems ensure visibility into every stage of transactions, providing trust and auditability for all participants.",
-      icon: "/ad1.png",
+      icon: ad1,
     },
     {
       title: "Built for DeFi",
       content:
         "Our protocol is designed to integrate seamlessly with decentralized finance ecosystems, ensuring accessibility and flexibility.",
-      icon: "/ad4.png",
+      icon: ad4
     },
     {
       title: "Flexible ownership",
       content:
         "Ownership rights are programmable and transferable, enabling new models of liquidity and governance.",
-      icon: "/ad3.png",
+      icon: ad3.png
     },
   ];
 
