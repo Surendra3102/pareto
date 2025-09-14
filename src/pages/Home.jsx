@@ -7,6 +7,7 @@ import banner from '../assets/banner.png';
 import f1 from '../assets/f1.png';
 import f2 from '../assets/f2.png';
 import f3 from '../assets/f3.png';
+import WaveBackground from '../components/WaveBackground';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <div className="card-container">
         <HeroCard />
       </div>
+      {/*<WaveBackground/>*/}
 
       {/* Headline + Subtext */}
       <div className="bottom">
@@ -109,13 +111,22 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Creditshow/>
+      <div>
+        <section id='product'><Creditshow/></section>
+      </div>
+      
       <div className='banner'>
         <h2>Where Roles Create Value</h2>
         <img src={banner} alt='banner'></img>
       </div>
-      <AdvantageSection/>
-      <Footer/>
+      <section id="features">
+        <AdvantageSection />
+      </section>
+
+      <section id="partners">
+        <Footer />
+      </section>
+     
     </section>
     
   );

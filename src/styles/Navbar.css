@@ -2,19 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 20px;
+  padding: 6px 16px;          /* reduced padding */
   background-color: rgba(239, 244, 236, 0.9);
   backdrop-filter: blur(2px);
-  margin: 0 2rem;
+  margin: 0 1rem;             /* smaller margin */
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 60px;
+  height: 50px;               /* reduced height */
 }
 
 /* Logo */
 .logo img {
-  height: 40px;
+  height: 32px;               /* slightly smaller logo */
   width: auto;
 }
 
@@ -23,14 +23,19 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 24px;                  /* slightly reduced gap */
   list-style: none;
   color: #555;
+}
+
+.nav-links a {
+  text-decoration: none;
 }
 
 .nav-links li {
   cursor: pointer;
   transition: color 0.2s;
+  font-size: 14px;            /* smaller font */
 }
 
 .nav-links li:hover {
@@ -41,11 +46,12 @@
 .enter-btn {
   background: #22c55e;
   color: #fff;
-  padding: 6px 14px;
+  padding: 5px 12px;          /* smaller button */
   border: none;
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 14px;
 }
 
 .enter-btn:hover {
@@ -60,7 +66,7 @@
 /* Hamburger hidden on desktop */
 .hamburger {
   display: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;          /* slightly smaller */
   cursor: pointer;
 }
 
@@ -73,17 +79,17 @@
 
   /* Mobile nav menu */
   .nav-links {
-    display: none; /* hidden by default */
+    display: none;
     flex-direction: column;
     align-items: center;
     background: rgba(245, 253, 243, 0.95);
     position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 220px;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    top: 50px;                /* adjusted for new navbar height */
+    right: 16px;
+    width: 200px;             /* slightly smaller */
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     animation: slideDown 0.3s ease;
   }
@@ -95,7 +101,7 @@
   /* Show mobile button inside dropdown */
   .mobile-btn {
     display: block;
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   /* Show hamburger */
@@ -114,4 +120,9 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }

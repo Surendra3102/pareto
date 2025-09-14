@@ -14,9 +14,9 @@ const Navbar = () => {
 
       {/* Center: Links */}
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li>Product</li>
-        <li>Features</li>
-        <li>Partners</li>
+        <li><a href='#product'>Product</a></li>
+        <li><a href='#features'>Features</a></li>
+        <li><a href='#partners'>Partners</a></li>
         {/* On mobile, button shows inside dropdown */}
         <li className="mobile-btn">
           <button className="enter-btn">Enter App</button>

@@ -31,13 +31,13 @@ const AdvantageSection = () => {
       title: "Built for DeFi",
       content:
         "Our protocol is designed to integrate seamlessly with decentralized finance ecosystems, ensuring accessibility and flexibility.",
-      icon: ad4
+      icon: ad4,
     },
     {
       title: "Flexible ownership",
       content:
         "Ownership rights are programmable and transferable, enabling new models of liquidity and governance.",
-      icon: ad3.png
+      icon: ad3,
     },
   ];
 
