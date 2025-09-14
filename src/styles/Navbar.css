@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  background-color: rgba(239, 244, 236, 0.9);
+  backdrop-filter: blur(2px);
+  margin: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Nav links (desktop default) */
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  color: #555;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-links li:hover {
+  color: #000;
+}
+
+/* Desktop Button */
+.enter-btn {
+  background: #22c55e;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enter-btn:hover {
+  background: #16a34a;
+}
+
+/* Hide mobile-specific button by default */
+.mobile-btn {
+  display: none;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  /* Hide desktop button */
+  .desktop-btn {
+    display: none;
+  }
+
+  /* Mobile nav menu */
+  .nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    align-items: center;
+    background: rgba(245, 253, 243, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 220px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideDown 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Show mobile button inside dropdown */
+  .mobile-btn {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Animation for dropdown */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
