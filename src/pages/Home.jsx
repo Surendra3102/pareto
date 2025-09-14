@@ -7,7 +7,7 @@ import banner from '../assets/banner.png';
 import f1 from '../assets/f1.png';
 import f2 from '../assets/f2.png';
 import f3 from '../assets/f3.png';
-import WaveBackground from '../components/WaveBackground';
+
 
 const Home = () => {
   return (
@@ -18,8 +18,6 @@ const Home = () => {
       <div className="card-container">
         <HeroCard />
       </div>
-      {/*<WaveBackground/>*/}
-
       {/* Headline + Subtext */}
       <div className="bottom">
         <h1 className="headline">Radically transforming credit, on-chain</h1>
